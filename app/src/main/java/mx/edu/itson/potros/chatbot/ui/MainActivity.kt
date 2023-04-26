@@ -5,11 +5,11 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.os.Bundle
-import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import mx.edu.itson.potros.chatbot.R
 import mx.edu.itson.potros.chatbot.data.Message
+import mx.edu.itson.potros.chatbot.utils.BotResponse
 import mx.edu.itson.potros.chatbot.utils.Constans.OPEN_GOOGLE
 import mx.edu.itson.potros.chatbot.utils.Constans.OPEN_SEARCH
 import mx.edu.itson.potros.chatbot.utils.Constans.RECEIVE_ID
@@ -20,8 +20,6 @@ import mx.edu.itson.potros.chatbot.utils.Time
 class MainActivity : AppCompatActivity() {
 
     private val TAG = "MainActivity"
-
-    var btn_send: Button = findViewById(R.id.btn_send) as Button
 
     //You can ignore this messageList if you're coming from the tutorial,
     // it was used only for my personal debugging

@@ -42,6 +42,11 @@ object BotResponse {
                     else -> "error" }
             }
 
+            // hello there
+            message.contains("hello there") -> {
+                "General Kenobi"
+            }
+
             //How are you?
             message.contains("how are you") -> {
                 when (random) {
